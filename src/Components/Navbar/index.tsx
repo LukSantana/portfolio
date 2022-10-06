@@ -42,10 +42,10 @@ export default function Header() {
                         </a>
                     </Popover.Group>
                     <div className="hidden items-center justify-end gap-4 md:flex md:flex-1 lg:w-0">
-                        <a href="https://github.com/LukSantana" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="https://github.com/LukSantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
                             <FaGithub className="text-white text-3xl" />
                         </a>
-                        <a href="https://www.linkedin.com/in/luksantana">
+                        <a href="https://www.linkedin.com/in/luksantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
                             <FaLinkedin className="text-white text-3xl" />
                         </a>
                     </div>
@@ -96,10 +96,10 @@ export default function Header() {
                                 </a>
                             </div>
                             <div className='flex justify-start gap-3'>
-                                <a href="https://github.com/LukSantana" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
+                                <a href="https://github.com/LukSantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
                                     <FaGithub className="text-3xl" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/luksantana" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
+                                <a href="https://www.linkedin.com/in/luksantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
                                     <FaLinkedin className="text-3xl" />
                                 </a>
                             </div>
