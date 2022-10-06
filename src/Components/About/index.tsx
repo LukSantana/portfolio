@@ -13,7 +13,7 @@ const About = () => {
                     de forma autodidata desde o começo de 2022 e estou sempre disposto
                     a conhecer e aprender novas coisas.
                 </span>
-                <div className="sm:w-[30%]"><Button text="Meu Currículo" onClick={downloadCurriculum} /></div>
+                <div className="sm:w-[30%]"><Button text="Meu Currículo" onClick={() => downloadCurriculum} /></div>
             </div>
         </div>
     )
