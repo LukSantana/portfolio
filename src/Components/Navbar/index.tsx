@@ -28,16 +28,16 @@ export default function Header() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                        <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                        <a href="#about" className="text-base font-medium text-white hover:text-gray-300">
                             SOBRE MIM
                         </a>
-                        <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                        <a href="#skills" className="text-base font-medium text-white hover:text-gray-300">
                             HABILIDADES
                         </a>
-                        <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                        <a href="#projects" className="text-base font-medium text-white hover:text-gray-300">
                             PROJETOS
                         </a>
-                        <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                        <a href="#contact" className="text-base font-medium text-white hover:text-gray-300">
                             CONTATO
                         </a>
                     </Popover.Group>
@@ -82,16 +82,16 @@ export default function Header() {
                         </div>
                         <div className="space-y-6 py-6 px-5">
                             <div className="grid grid-cols-1 gap-y-4 gap-x-8">
-                                <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                                <a href="#about" className="text-base font-medium text-white hover:text-gray-300">
                                     SOBRE MIM
                                 </a>
-                                <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                                <a href="#skills" className="text-base font-medium text-white hover:text-gray-300">
                                     HABILIDADES
                                 </a>
-                                <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                                <a href="#projects" className="text-base font-medium text-white hover:text-gray-300">
                                     PROJETOS
                                 </a>
-                                <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                                <a href="#contact" className="text-base font-medium text-white hover:text-gray-300">
                                     CONTATO
                                 </a>
                             </div>

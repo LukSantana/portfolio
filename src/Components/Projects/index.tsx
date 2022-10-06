@@ -54,7 +54,7 @@ const Projects = () => {
     const isMobile = window.innerWidth <= 1024
 
     return (
-        <div className='flex flex-col justify-center items-center gap-12'>
+        <div className='flex flex-col justify-center items-center gap-12' id='projects'>
             <Heading>Projetos</Heading>
             <Carousel
                 additionalTransfrom={0}

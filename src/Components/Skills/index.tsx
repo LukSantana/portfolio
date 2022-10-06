@@ -47,7 +47,7 @@ const Skills = () => {
     ]
 
     return (
-        <div className='flex flex-col h-full items-center py-8 gap-8'>
+        <div className='flex flex-col h-full items-center py-8 gap-8' id="skills">
             <Heading>Habilidades</Heading>
             <h2 className='text-white text-2xl'>Hard Skills</h2>
             <div className="grid grid-cols-2 sm:flex sm:flex-1 sm:flex-wrap sm:justify-center gap-6">
