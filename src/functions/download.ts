@@ -1,5 +1,5 @@
 const downloadCurriculum = () => {
-    let url = '../../assets/curriculo-lucas-santana.pdf'
+    let url = '/assets/curriculo-lucas-santana.pdf'
     const anchor = document.createElement('a');
     anchor.href = url;
     anchor.download = 'curriculo-lucas-santana.pdf';

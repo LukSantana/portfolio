@@ -4,7 +4,7 @@ import Heading from "../Heading"
 
 const About = () => {
     return (
-        <div className='flex justify-center sm:flex-row flex-col items-center gap-24 h-fit py-12'>
+        <div className='flex justify-center sm:flex-row flex-col items-center gap-24 h-fit py-12' id="about">
             <div className="flex justify-end sm:w-[50%]"><img className='h-80' src="../../assets/img/developer_cartoon.png" alt="Delevoper Cartoon Image" /></div>
             <div className="flex flex-col gap-4 justify-center sm:w-[50%] sm:px-0 px-6">
                 <Heading>Sobre Mim</Heading>

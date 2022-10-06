@@ -4,7 +4,7 @@ import Heading from "../Heading"
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 min-h-full sm:my-16">
+    <div className="flex flex-col justify-center items-center gap-8 min-h-full sm:my-16" id="contact">
         <Heading>Contato</Heading>
         <h2 className='text-white text-2xl'>Entre em contato comigo:</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center text-white">
