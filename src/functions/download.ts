@@ -1,8 +1,12 @@
-const downloadCurriculum = () => {
-    let url = '/assets/curriculo-lucas-santana.pdf'
+interface downloadCurriculumProps {
+    url: string
+    fileName: string
+}
+
+const downloadCurriculum = ({ url, fileName }: downloadCurriculumProps) => {
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = 'curriculo-lucas-santana.pdf';
+    anchor.download = fileName;
 
     document.body.appendChild(anchor);
 

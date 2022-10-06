@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
+import { Link } from "react-scroll";
 import {
     Bars3Icon,
     XMarkIcon,
@@ -8,18 +9,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
     return (
-        <Popover className="relative bg-[#212529]">
+        <Popover className="relative bg-[#212529]" id='navbar'>
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#">
-                            <span className="sr-only">LukSantana</span>
-                            <img
-                                className="h-8 w-auto sm:h-7"
-                                src="/assets/img/luksantana.png"
-                                alt=""
-                            />
-                        </a>
+                        <span className="sr-only">LukSantana</span>
+                        <img
+                            className="h-8 w-auto sm:h-7"
+                            src="/assets/img/luksantana.png"
+                            alt=""
+                        />
                     </div>
                     <div className="-my-2 -mr-2 md:hidden">
                         <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#212529] p-2 text-gray-400 hover:bg-[#212529] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-stone-500">
@@ -28,18 +27,48 @@ export default function Header() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                        <a href="#about" className="text-base font-medium text-white hover:text-gray-300">
+                        <Link
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                        >
                             SOBRE MIM
-                        </a>
-                        <a href="#skills" className="text-base font-medium text-white hover:text-gray-300">
+                        </Link>
+                        <Link
+                            to="skills"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            className="text-base cursor-pointer font-medium text-white hover:text-gray-300">
                             HABILIDADES
-                        </a>
-                        <a href="#projects" className="text-base font-medium text-white hover:text-gray-300">
+                        </Link>
+                        <Link
+                            to="projects"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                        >
                             PROJETOS
-                        </a>
-                        <a href="#contact" className="text-base font-medium text-white hover:text-gray-300">
+                        </Link>
+                        <Link
+                            to="contact"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                        >
                             CONTATO
-                        </a>
+                        </Link>
                     </Popover.Group>
                     <div className="hidden items-center justify-end gap-4 md:flex md:flex-1 lg:w-0">
                         <a href="https://github.com/LukSantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
@@ -82,18 +111,46 @@ export default function Header() {
                         </div>
                         <div className="space-y-6 py-6 px-5">
                             <div className="grid grid-cols-1 gap-y-4 gap-x-8">
-                                <a href="#about" className="text-base font-medium text-white hover:text-gray-300">
+                                <Link
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={500}
+                                    className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                                >
                                     SOBRE MIM
-                                </a>
-                                <a href="#skills" className="text-base font-medium text-white hover:text-gray-300">
+                                </Link>
+                                <Link
+                                    to="skills"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={500}
+                                    className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                                >
                                     HABILIDADES
-                                </a>
-                                <a href="#projects" className="text-base font-medium text-white hover:text-gray-300">
+                                </Link>
+                                <Link
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={500}
+                                    className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                                >
                                     PROJETOS
-                                </a>
-                                <a href="#contact" className="text-base font-medium text-white hover:text-gray-300">
+                                </Link>
+                                <Link
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={500}
+                                    className="text-base cursor-pointer font-medium text-white hover:text-gray-300"
+                                >
                                     CONTATO
-                                </a>
+                                </Link>
                             </div>
                             <div className='flex justify-start gap-3'>
                                 <a href="https://github.com/LukSantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
