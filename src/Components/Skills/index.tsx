@@ -22,7 +22,7 @@ const Skills = () => {
 		},
 		{
 			title: "Typescript",
-			imgUrl: "/assets/icon/typescript.svg",
+			imgUrl: "/assets/icon/typescript.png",
 			skillLevel: "70%",
 		},
 		{
@@ -42,7 +42,7 @@ const Skills = () => {
 		},
 		{
 			title: "Python",
-			imgUrl: "/assets/icon/python.webp",
+			imgUrl: "/assets/icon/python.png",
 			skillLevel: "75%",
 		},
 		{
