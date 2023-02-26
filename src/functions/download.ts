@@ -1,9 +1,4 @@
-interface downloadCurriculumProps {
-    url: string
-    fileName: string
-}
-
-const downloadCurriculum = ({ url, fileName }: downloadCurriculumProps) => {
+const downloadCurriculum = (url:string, fileName:string) => {
     const anchor = document.createElement('a');
     anchor.href = url;
     anchor.download = fileName;
