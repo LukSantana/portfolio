@@ -24,7 +24,7 @@ export const socialMedia: Array<SocialMediaProps> = [
   {
     title: "Email",
     icon: FaEnvelope,
-    url: "@mail:lucas.diassantana@gmail.com",
+    url: "mailto:lucas.diassantana@gmail.com",
     username: "Email"
   }
 ]
