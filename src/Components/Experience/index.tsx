@@ -1,16 +1,16 @@
 const Experience = () => {
 	return (
-		<div className="flex flex-col gap-4">
-			<h1 className="text-white text-5xl text-center font-medium">
+		<div className="flex flex-col gap-4  text-center w-[80%]">
+			<h1 className="text-white text-3xl lg:text-5xl font-medium">
 				Professional Experience
 			</h1>
-			<p className="text-white text-center px-0 sm:px-20 lg:px-40">
+			<p className="text-white px-0 sm:px-20 lg:px-40">
 				I have worked for about 3 months on RPA development for automation of
 				repetitive processes using Python and Low Code technologies and constant
 				contact with collaborators from the respective areas for most assertive
 				results reducing the lead time of the impacted processes on 40%-80%.
 			</p>
-			<p className="text-white text-center px-0 sm:px-20">
+			<p className="text-white px-0 sm:px-20">
 				Worked for about 6 months on a Kanban management workspace using React,
 				Node.js, Typescript and Microservices Architecture and intense
 				communication with the product, design and development teams for better
