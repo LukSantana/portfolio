@@ -1,10 +1,10 @@
 const Experience = () => {
 	return (
 		<div className="flex flex-col gap-4">
-			<h1 className="text-white text-5xl text-center">
+			<h1 className="text-white text-5xl text-center font-medium">
 				Professional Experience
 			</h1>
-			<p className="text-white text-center px-0 sm:px-20">
+			<p className="text-white text-center px-0 sm:px-20 lg:px-40">
 				I have worked for about 3 months on RPA development for automation of
 				repetitive processes using Python and Low Code technologies and constant
 				contact with collaborators from the respective areas for most assertive
