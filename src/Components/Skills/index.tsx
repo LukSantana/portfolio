@@ -11,7 +11,7 @@ import React from "react";
 const Skills = () => {
 	return (
 		<div className="flex flex-col h-full items-center py-4 gap-8" id="skills">
-			<h1 className="text-white text-5xl">Habilities</h1>
+			<h1 className="text-white text-5xl font-medium">Habilities</h1>
 			<h2 className="text-white text-3xl">Hard Skills</h2>
 			<h2 className="text-white text-2xl">Front-End</h2>
 			<div className="grid grid-cols-2 sm:flex sm:flex-1 sm:flex-wrap sm:justify-center gap-6">
