@@ -3,6 +3,7 @@ interface ProjectCardProps {
 	title: string;
 	description: string;
 	projectUrl: string;
+	responsibilities: string;
 	gitHubUrl: string;
 }
 
@@ -11,6 +12,7 @@ const ProjectCard = ({
 	title,
 	description,
 	projectUrl,
+	responsibilities,
 	gitHubUrl,
 }: ProjectCardProps) => {
 	return (
@@ -24,9 +26,13 @@ const ProjectCard = ({
 					/>
 				}
 			</a>
-			<div className="flex flex-col items-center justify-evenly min-h-[14rem] px-3">
+			<div className="flex flex-col gap-3 items-center justify-evenly min-h-[18rem] max-h-[20rem] px-3">
 				<h2 className="font-medium text-2xl">{title}</h2>
 				<span className="break-words text-center px-2">{description}</span>
+				<span className="break-words text-center px-2">
+					<div className="font-bold">Responsibilities:</div>
+					{responsibilities}
+				</span>
 				<a
 					className="border-2 rounded-lg px-3 py-1 mb-4 cursor-pointer transition ease-in-out hover:scale-105"
 					href={gitHubUrl}

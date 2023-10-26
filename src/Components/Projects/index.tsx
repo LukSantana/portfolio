@@ -2,56 +2,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import ProjectCard from "../ProjectCard";
+import { projects } from "../../utils/projects";
 
 const Projects = () => {
-	const projects = [
-		{
-			imgUrl: "/assets/img/fashionista1.png",
-			title: "Fashionista",
-			description:
-				"Projeto em equipe feito em React e NodeJS com banco de dados em PostgreSQL.",
-			responsabilities: "Liderança de equipe e desenvolvimento.",
-			projectUrl: "https://fashionista-hackadev.netlify.app/",
-			gitHubUrl: "https://github.com/LukSantana/fashionista2",
-		},
-		{
-			imgUrl: "/assets/img/nlw-esports.png",
-			title: "NLW-eSports",
-			description:
-				"Projeto feito em React, React Native e NodeJS pela Next Level Week da Rocketseat.",
-			projectUrl: "https://nlw-esports-luk.netlify.app/",
-			gitHubUrl: "https://github.com/LukSantana/NLW-eSports",
-		},
-		{
-			imgUrl: "/assets/img/geradorSenha.png",
-			title: "Gerador de Senhas",
-			description: "Gerador de senhas feito com HTML, CSS e Javascript.",
-			projectUrl: "https://luksantana.github.io/geradorSenha/",
-			gitHubUrl: "https://github.com/LukSantana/geradorSenha",
-		},
-		{
-			imgUrl: "/assets/img/validador.png",
-			title: "Validador de CPF",
-			description: "Validador de CPF feito em NodeJS.",
-			projectUrl: "https://luksantana.github.io/verificador-cpf/",
-			gitHubUrl: "https://github.com/LukSantana/verificador-cpf",
-		},
-		{
-			imgUrl: "/assets/img/relogio.png",
-			title: "Relógio",
-			description: "Relógio feito HTML, CSS e Javascript.",
-			projectUrl: "https://luksantana.github.io/relogio/",
-			gitHubUrl: "https://github.com/LukSantana/relogio",
-		},
-		{
-			imgUrl: "/assets/img/calculadora.png",
-			title: "Calculadora",
-			description: "Calculadora feita em HTML, CSS e Javascript.",
-			projectUrl: "https://luksantana.github.io/calculadora/",
-			gitHubUrl: "https://github.com/LukSantana/calculadora",
-		},
-	];
-
 	const isMobile = window.innerWidth <= 1024;
 
 	return (
@@ -59,7 +12,9 @@ const Projects = () => {
 			className="flex flex-col justify-center items-center gap-12 w-[80%] max-w-full"
 			id="projects"
 		>
-			<h1 className="text-white text-5xl font-medium text-center">Personal Projects</h1>
+			<h1 className="text-white text-5xl font-medium text-center">
+				Personal Projects
+			</h1>
 			<Carousel
 				additionalTransfrom={0}
 				arrows
@@ -117,6 +72,7 @@ const Projects = () => {
 						title={project.title}
 						description={project.description}
 						projectUrl={project.projectUrl}
+						responsibilities={project.responsibilities}
 						gitHubUrl={project.gitHubUrl}
 					/>
 				))}
