@@ -1,24 +1,23 @@
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
 
-import About from './Components/About';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar/index'
-import Projects from './Components/Projects';
-import Skills from './Components/Skills';
-
-import './styles/main.css';
+import "./styles/main.css";
 
 function App() {
-  return (
-    <div className="flex flex-col gap-14">
-      <Navbar/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-    </div>
-  )
+	return (
+		<div className="flex flex-col items-center gap-14">
+			<About />
+			<Skills />
+      <Experience/>
+			<Projects />
+			<Contact />
+			<Footer />
+		</div>
+	);
 }
 
-export default App
+export default App;
