@@ -8,9 +8,9 @@ interface SkillCardProps {
 
 const SkillsCard = ({ title, icon }: SkillCardProps) => {
 	return (
-		<div className="flex flex-col justify-center items-center w-24 gap-4">
+		<div className="flex flex-col justify-center items-center max-w-[5rem] gap-3">
 			{React.createElement(icon, { size: 40, color: "#22c55e" })}
-			<h2 className="text-center text-white w-full h-12">{title}</h2>
+			<h2 className="text-center text-white h-12">{title}</h2>
 		</div>
 	);
 };

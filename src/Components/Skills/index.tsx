@@ -14,30 +14,33 @@ const Skills = () => {
 			<h1 className="text-white text-5xl font-medium">Habilities</h1>
 			<h2 className="text-white text-3xl">Hard Skills</h2>
 			<h2 className="text-white text-2xl">Front-End</h2>
-			<div className="grid grid-cols-2 sm:flex sm:flex-1 sm:flex-wrap sm:justify-center gap-6">
+			<div className="flex flex-wrap flex-row justify-center items-center gap-6">
 				{frontEndSkillList.map((skill) => (
 					<SkillsCard key={skill.title} title={skill.title} icon={skill.icon} />
 				))}
 			</div>
 			<h2 className="text-white text-2xl">Back-End</h2>
-			<div className="grid grid-cols-2 sm:flex sm:flex-1 sm:flex-wrap sm:justify-center gap-6">
+			<div className="flex flex-wrap flex-row justify-center items-center gap-6">
 				{backEndSkillsList.map((skill) => (
 					<SkillsCard key={skill.title} title={skill.title} icon={skill.icon} />
 				))}
 			</div>
 			<h2 className="text-white text-2xl">Other Technologies</h2>
-			<div className="grid grid-cols-2 sm:flex sm:flex-1 sm:flex-wrap sm:justify-center gap-6">
+			<div className="flex flex-wrap flex-row justify-center items-center gap-6">
 				{otherSkillList.map((skill) => (
 					<SkillsCard key={skill.title} title={skill.title} icon={skill.icon} />
 				))}
 			</div>
 			<h2 className="text-white text-3xl">Soft Skills</h2>
-			<div className="grid grid-cols-1 sm:grid-cols-3 justify-items-center items-center gap-5 text-white">
+			<div className="flex flex-wrap flex-row justify-center items-center gap-6 max-w-[80%] text-white">
 				{softSkillList.map((skill) => {
 					return (
-						<div className="flex items-center gap-3" key={skill.title}>
+						<div
+							className="flex flex-wrap flex-col lg:flex-row justify-center items-center gap-1 lg:gap-6"
+							key={skill.title}
+						>
 							{React.createElement(skill.icon)}
-							<span>{skill.title}</span>
+							<span className="text-center">{skill.title}</span>
 						</div>
 					);
 				})}
