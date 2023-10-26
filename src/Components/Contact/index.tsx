@@ -1,5 +1,3 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaEnvelope } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { socialMedia } from "../../utils/socialMedia";
 import React from "react";
