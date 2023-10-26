@@ -12,6 +12,7 @@ import {
   SiExpress,
   SiFigma,
   SiGit,
+  SiGithub,
   SiJavascript,
   SiJest,
   SiMicrosoftsqlserver,
@@ -27,7 +28,11 @@ import {
   GiMagnifyingGlass
 } from "react-icons/gi"
 import { IconType } from "react-icons/lib";
-import { FaJava, FaLanguage, FaRocket } from "react-icons/fa";
+import {
+  FaJava,
+  FaLanguage,
+  FaRocket
+} from "react-icons/fa";
 
 interface HardSkillProps {
   title: string,
@@ -106,6 +111,10 @@ export const otherSkillList: Array<HardSkillProps> = [
   {
     title: "Azure DevOps",
     icon: SiAzuredevops,
+  },
+  {
+    title: "GitHub",
+    icon: SiGithub,
   },
   {
     title: "Swagger",
