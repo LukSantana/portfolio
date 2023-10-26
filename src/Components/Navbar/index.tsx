@@ -9,7 +9,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
     return (
-        <Popover className="relative bg-[#212529]" id='navbar'>
+        <Popover className="relative bg-clip-padding" id='navbar'>
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                 <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -70,14 +70,6 @@ const Header = () => {
                             CONTATO
                         </Link>
                     </Popover.Group>
-                    <div className="hidden items-center justify-end gap-4 md:flex md:flex-1 lg:w-0">
-                        <a href="https://github.com/LukSantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
-                            <FaGithub className="text-white text-3xl" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/luksantana" target="_blank" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-200">
-                            <FaLinkedin className="text-white text-3xl" />
-                        </a>
-                    </div>
                 </div>
             </div>
 

@@ -6,7 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Poppins', 'sans-serif']
+      'sans': ['Poppins', 'sans-serif'],
+      'VT323': ['VT323'],
     },
     extend: {
     },

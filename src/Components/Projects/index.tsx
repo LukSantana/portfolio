@@ -1,7 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import Heading from '../Heading';
 import ProjectCard from '../ProjectCard';
 
 const Projects = () => {
@@ -55,7 +54,7 @@ const Projects = () => {
 
     return (
         <div className='flex flex-col justify-center items-center gap-12' id='projects'>
-            <Heading>Projetos</Heading>
+            <h1 className='text-white text-4xl'>Personal Projects</h1>
             <Carousel
                 additionalTransfrom={0}
                 arrows
