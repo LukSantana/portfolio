@@ -24,7 +24,7 @@ const ProjectCard = ({
 					/>
 				}
 			</a>
-			<div className="flex flex-col items-center justify-evenly min-h-[calc(14rem)] px-3">
+			<div className="flex flex-col items-center justify-evenly min-h-[14rem] px-3">
 				<h2 className="font-medium text-2xl">{title}</h2>
 				<span className="break-words text-center px-2">{description}</span>
 				<a
