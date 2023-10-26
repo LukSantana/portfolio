@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const TerminalEffect = () => {
 	return (
-		<div className="flex w-1/3 -z-50 h-36 text-center">
+		<div className="flex w-1/3 -z-50 h-[26rem] sm:h-36 text-center">
 			<TypeAnimation
 				sequence={[
 					`Brazilian Developer,
