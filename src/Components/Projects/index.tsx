@@ -56,10 +56,10 @@ const Projects = () => {
 
 	return (
 		<div
-			className="flex flex-col justify-center items-center gap-12"
+			className="flex flex-col justify-center items-center gap-12 w-[80%] max-w-full"
 			id="projects"
 		>
-			<h1 className="text-white text-5xl font-medium">Personal Projects</h1>
+			<h1 className="text-white text-5xl font-medium text-center">Personal Projects</h1>
 			<Carousel
 				additionalTransfrom={0}
 				arrows

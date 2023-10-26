@@ -14,7 +14,7 @@ const ProjectCard = ({
 	gitHubUrl,
 }: ProjectCardProps) => {
 	return (
-		<div className="flex flex-col justify-start items-center gap-4 backdrop-blur-sm bg-white/5 text-white relative m-6 rounded-lg h-[30rem] ease-in-out hover:-translate-y-1">
+		<div className="flex flex-col justify-start items-center gap-4 backdrop-blur-sm bg-white/5 text-white relative m-6 rounded-lg lg:min-h-[36rem] ease-in-out hover:-translate-y-1">
 			<a className="cursor-pointer" href={projectUrl} target="_blank">
 				{
 					<img
@@ -24,7 +24,7 @@ const ProjectCard = ({
 					/>
 				}
 			</a>
-			<div className="flex flex-col items-center justify-center h-1/3 gap-2 px-3">
+			<div className="flex flex-col items-center justify-evenly min-h-[calc(14rem)] px-3">
 				<h2 className="font-medium text-2xl">{title}</h2>
 				<span className="break-words text-center px-2">{description}</span>
 				<a
