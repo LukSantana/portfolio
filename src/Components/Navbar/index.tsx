@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<Popover className="relative bg-clip-padding" id="navbar">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6">
-				<div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
+				<div className="flex items-center justify-between py-6 md:justify-between md:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
 						<span className="sr-only">LukSantana</span>
 						<img
@@ -53,7 +53,7 @@ const Header = () => {
 			>
 				<Popover.Panel
 					focus
-					className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+					className="absolute top-[3.6rem] right-0 origin-top-right transform p-2 transition w-[80%] md:hidden"
 				>
 					<div className="divide-y-2 divide-gray-50 rounded-lg bg-[#212529] shadow-lg ring-1 ring-black ring-opacity-5">
 						<div className="px-5 pt-5 pb-6">

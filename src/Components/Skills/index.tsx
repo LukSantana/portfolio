@@ -10,7 +10,7 @@ import React from "react";
 
 const Skills = () => {
 	return (
-		<div className="flex flex-col h-full items-center py-4 gap-8" id="skills">
+		<div className="flex flex-col h-full items-center py-4 mx-4 gap-8" id="skills">
 			<h1 className="text-white text-5xl font-medium">Habilities</h1>
 			<h2 className="text-white text-3xl">Hard Skills</h2>
 			<h2 className="text-white text-2xl">Front-End</h2>
