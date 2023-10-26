@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const TerminalEffect = () => {
 	return (
-		<div className="flex w-1/3 -z-50 h-[26rem] sm:h-36 text-center">
+		<div className="flex justify-center px-4 -z-50 min-h-[27rem] sm:min-h-[17rem] md:min-h-[3rem] lg:min-h-fit w-1/3 md:w-full text-center">
 			<TypeAnimation
 				sequence={[
 					`Brazilian Developer,
@@ -21,6 +21,7 @@ const TerminalEffect = () => {
 					display: "inline-block",
 					color: "#4AF626",
 					fontFamily: "VT323",
+					textAlign: 'center',
 				}}
 				repeat={Infinity}
 			/>
